@@ -1,4 +1,4 @@
-package algorithm_with_go
+package main
 
 //ref: https://pkg.go.dev/container/heap
 
@@ -50,8 +50,6 @@ func (pq *PriorityQueue) update(item *Item, value string, priority int) {
 	item.priority = priority
 	heap.Fix(pq, item.index)
 }
-
-
 
 // Example
 //pq := make(PriorityQueue, 0)
